@@ -1,0 +1,28 @@
+{
+    "id": "63e555ed115ad4d94b71826d",
+    "name": "db-trigger-test",
+    "type": "DATABASE",
+    "config": {
+        "operation_types": [
+            "UPDATE"
+        ],
+        "database": "sample_restaurants",
+        "collection": "restaurants",
+        "service_name": "mongodb-atlas",
+        "match": {},
+        "project": {},
+        "full_document": true,
+        "full_document_before_change": false,
+        "unordered": false,
+        "skip_catchup_events": false,
+        "tolerate_resume_errors": false
+    },
+    "disabled": false,
+    "event_processors": {
+        "FUNCTION": {
+            "config": {
+                "function_name": "testFunc"
+            }
+        }
+    }
+}

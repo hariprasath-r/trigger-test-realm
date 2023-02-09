@@ -1,7 +1,7 @@
 {
-    "app_id": "application-0-mtymq",
+    "app_id": "trigger-test-app-aueuj",
     "config_version": 20210101,
-    "name": "Application-0",
+    "name": "trigger-test-app",
     "location": "IN-MB",
     "provider_region": "aws-ap-south-1",
     "deployment_model": "LOCAL"
