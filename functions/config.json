@@ -2,5 +2,9 @@
     {
         "name": "testFunc",
         "private": true
+    },
+    {
+        "name": "restaurantArchiveFunc",
+        "private": true
     }
 ]
