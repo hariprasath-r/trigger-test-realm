@@ -1,6 +1,6 @@
 {
     "id": "63e555ed115ad4d94b71826d",
-    "name": "db-trigger-test",
+    "name": "restaurant-trigger",
     "type": "DATABASE",
     "config": {
         "operation_types": [
