@@ -1,0 +1,17 @@
+{
+    "id": "63ea9a6079ba3e64540b0e2b",
+    "name": "scheduler-trigger",
+    "type": "SCHEDULED",
+    "config": {
+        "schedule": "25 12 * * 2",
+        "skip_catchup_events": false
+    },
+    "disabled": false,
+    "event_processors": {
+        "FUNCTION": {
+            "config": {
+                "function_name": "schedulerFunc"
+            }
+        }
+    }
+}

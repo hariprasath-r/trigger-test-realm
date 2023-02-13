@@ -3,13 +3,7 @@
     "type": "mongodb-atlas",
     "config": {
         "clusterName": "test-cluster",
-        "namespacePreimageConfigs": [
-            {
-                "collectionName": "restaurants",
-                "dbName": "sample_restaurants",
-                "recordPreimages": true
-            }
-        ],
+        "namespacePreimageConfigs": [],
         "readPreference": "primary",
         "wireProtocolEnabled": false
     },

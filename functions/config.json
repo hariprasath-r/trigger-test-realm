@@ -1,10 +1,14 @@
 [
     {
+        "name": "restaurantArchiveFunc",
+        "private": true
+    },
+    {
         "name": "restaurantEventsFunc",
         "private": true
     },
     {
-        "name": "restaurantArchiveFunc",
+        "name": "schedulerFunc",
         "private": true
     }
 ]
