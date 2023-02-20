@@ -1,0 +1,73 @@
+{
+  "id": "63625554eecf115f68a03a6b",
+  "name": "actions-trigger",
+  "type": "DATABASE",
+  "config": {
+    "operation_types": [
+      "INSERT",
+      "UPDATE",
+      "REPLACE"
+    ],
+    "database": "users_db",
+    "collection": "users",
+    "service_name": "mongodb-atlas",
+    "match": {
+      "$or": [
+        {
+          "$and": [
+            {
+              "fullDocument.actions": {
+                "$exists": true
+              }
+            },
+            {
+              "fullDocument.actions": {
+                "$ne": []
+              }
+            },
+            {
+              "updateDescription": {
+                "$exists": false
+              }
+            }
+          ]
+        },
+        {
+          "$and": [
+            {
+              "updateDescription.updatedFields.actions": {
+                "$exists": true
+              }
+            },
+            {
+              "fullDocument.actions": {
+                "$ne": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "project": {
+      "_id": 1,
+      "operationType": 1,
+      "fullDocument.actions": 1,
+      "updateDescription.updatedFields.action": 1
+    },
+    "full_document": true,
+    "full_document_before_change": false,
+    "unordered": true,
+    "skip_catchup_events": false,
+    "tolerate_resume_errors": false
+  },
+  "disabled": true,
+  "event_processors": {
+    "AWS_EVENTBRIDGE": {
+      "config": {
+        "account_id": "abc",
+        "extended_json_enabled": false,
+        "region": "eu-central-1"
+      }
+    }
+  }
+}
