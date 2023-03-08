@@ -11,7 +11,11 @@
         "collection": "restaurants",
         "service_name": "mongodb-atlas",
         "match": {},
-        "project": {},
+        "project": {
+            "_id": 1,
+            "operationType": 1,
+            "address.building": 1
+        },
         "full_document": true,
         "full_document_before_change": false,
         "unordered": false,
