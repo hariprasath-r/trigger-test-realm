@@ -17,7 +17,8 @@
             "clusterTime": 1,
             "ns": 1,
             "documentKey": 1,
-            "fullDocument.address.building": 1
+            "fullDocument.address.building": 1,
+            "updateDescription.updatedFields": 1
         },
         "full_document": false,
         "full_document_before_change": false,
