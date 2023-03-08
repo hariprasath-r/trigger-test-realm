@@ -19,7 +19,7 @@
             "documentKey": 1,
             "fullDocument.address.building": 1
         },
-        "full_document": true,
+        "full_document": false,
         "full_document_before_change": false,
         "unordered": false,
         "skip_catchup_events": false,
